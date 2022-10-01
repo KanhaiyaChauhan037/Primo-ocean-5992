@@ -6,14 +6,15 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Box30 from "./box30";
 import { Navigate ,Link } from "react-router-dom";
-// import Signup from "./Signup";
+import Foot from "./Footer";
+
 
 function Homepage() {
 
     useEffect(() => {
         AOS.init({
-            delay: 100,
-            offset: 150,
+            delay: 150,
+            offset: 250,
             duration: 800
         });
     }, [])
@@ -222,6 +223,11 @@ function Homepage() {
                     <Box30 />
                 </SimpleGrid>
             </Box>
+
+
+<Box className="gofo">
+<Foot/>
+</Box>
 
 
         </>
