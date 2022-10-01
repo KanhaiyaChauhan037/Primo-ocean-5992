@@ -4,6 +4,7 @@ import Pricing from "../Components/Pricing";
 import Products from "../Components/Products";
 import Resources from "../Components/Resources";
 import Login from "../Components/Login";
+import Signup from "../Components/Signup";
 function AllRoutes(){
     return(
         <>
@@ -13,6 +14,7 @@ function AllRoutes(){
             <Route path="/pricing" element={<Pricing/>} />
             <Route path="/resources" element={<Resources/>}/>
             <Route path="/login" element={<Login/>}/>
+            <Route path="/Signup" element={<Signup/>}/>
         </Routes>
         </>
     )
