@@ -7,7 +7,7 @@ import "./Login.png"
 function Signup(){
 
    const handleSignup =()=>{
-
+alert("Sign up Successfully")
         return <Navigate to="/Login" />
     }
     
@@ -41,7 +41,7 @@ function Signup(){
                  <Box width="400px" height="25px" fontSize="12px" margin="auto" marginTop="5px" textAlign="centre">Privacy Policy</Box>
             </Box>
             <Box width="1023px"> 
-                <Image width="1023px" height="740px" src="https://i.ibb.co/PWFKJbQ/Login.png" />
+                <Image width="1023px" height="740px" position="fixed" src="https://i.ibb.co/PWFKJbQ/Login.png" />
             </Box>
        
         </Box>

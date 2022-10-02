@@ -5,7 +5,7 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import Box30 from "./box30";
-import { Navigate ,Link } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 import Foot from "./Footer";
 
 
@@ -19,7 +19,7 @@ function Homepage() {
         });
     }, [])
 
-   
+
 
     return (
         <>
@@ -42,12 +42,12 @@ function Homepage() {
                         type="email"
                         placeholder='Your email address'
                         border="2px solid red"
-                    
-                        
+
+
                     />
                     <InputRightElement width="150px" height="54px" >
-                    <Link to ="/Signup"><Button width="150px" height="54px" marginTop="20px" bg="#ff7342" color="white" borderRadius="30px" marginRight="10px">Get Started
-                        </Button> </Link> 
+                        <Link to="/Signup"><Button width="150px" height="54px" marginTop="20px" bg="#ff7342" color="white" borderRadius="30px" marginRight="15px">Get Started
+                        </Button> </Link>
                     </InputRightElement>
                 </InputGroup>
             </Box>
@@ -205,30 +205,71 @@ function Homepage() {
             </Box>
 
             {/* Box_30 theory */}
-            <Box data-aos="fade-up"  fontSize="30px" fontFamily="bold.200" marginTop="2%">
+            <Box data-aos="fade-up" fontSize="30px" fontFamily="bold.200" marginTop="2%">
                 <Heading>Do It All With EngageBay</Heading>
             </Box>
             <Box data-aos="fade-up" fontSize="18px" color="gray" textAlign="center" marginTop="2%">
-             
-                    <p>Stop paying thousands of dollars to dozens of marketing, sales, and support software. Experience <br /> the world's most affordable, unified software. EngageBay's all-in-one CRM software is the most <br /> comprehensive solution for your business.</p>
-               
+
+                <p>Stop paying thousands of dollars to dozens of marketing, sales, and support software. Experience <br /> the world's most affordable, unified software. EngageBay's all-in-one CRM software is the most <br /> comprehensive solution for your business.</p>
+
 
             </Box>
 
             {/* Box-30 */}
 
-            <Box data-aos="fade-up"  width="90%" margin="auto" marginTop="5%" padding="10px">
+            <Box data-aos="fade-up" width="90%" margin="auto" marginTop="5%" padding="10px">
 
                 <SimpleGrid columns={6} spacing={5}>
                     <Box30 />
                 </SimpleGrid>
             </Box>
 
+            <Box bg="#f8f9fa" p="5px" mt="30px">
+                <Box marginTop="40px" >
+                    <Stack>
+                        <Text fontSize="35px" fontWeight="bold">Simplify Marketing, Sales, & Support with the best free</Text>
+                        <Text fontSize="35px" fontWeight="bold" color="#be70fb">All-In-One CRM software</Text>
+                    </Stack>
+                    <Stack>
+                        <InputGroup width="630px" margin="auto"  mt="2%">
 
-<Box className="gofo">
-<Foot/>
-</Box>
+                            <Input
+                                variant='outline red'
+                                h="73px"
+                                padding="6px 172px 6px 30px"
+                                borderRadius="35px"
+                                width="630px"
+                                type="email"
+                                placeholder='Your email address'
+                                border="2px solid red"
 
+
+                            />
+
+                            <InputRightElement width="150px" height="54px" >
+                                <Link to="/Signup"><Button width="150px" height="54px" marginTop="20px" bg="#ff7342" color="white" borderRadius="30px" marginRight="15px">Get Started
+                                </Button> </Link>
+                            </InputRightElement>
+                        </InputGroup>
+                    </Stack>
+
+                </Box>
+
+                <Box width="500px" display="flex" justifyContent="space-evenly" margin="auto" marginTop="30px">
+                    <Box height="40px" width="170px" display="flex" >
+                        <Image height="20px" src="https://after.sale/wp-content/uploads/2022/04/02.png.webp" alt="logo" />
+                        <h1>Free for 15 users</h1></Box>
+
+                    <Box height="40px" width="170px" display="flex" >
+                        <Image height="20px" src="https://after.sale/wp-content/uploads/2022/04/02.png.webp" alt="logo" />
+                        <h1>Free for 15 users</h1></Box>
+                </Box>
+            </Box>
+            {/* footer part */}
+
+            <Box className="gofo">
+                <Foot />
+            </Box>
 
         </>
     )

@@ -6,7 +6,7 @@ import "./Login.png"
 function Login(){
 
    const handleLogin =()=>{
-
+ alert("Login Successfull!")
         return <Navigate to="/" />
     }
     
@@ -18,7 +18,7 @@ function Login(){
                  <Box  marginTop="80px"><Image width="200px" height="30px" margin="auto" src="https://d2p078bqz5urf7.cloudfront.net/cloud/assets/img/engagebay.png"/></Box>
                  <Box  width="400px" height="60px" fontSize="40px" margin="auto" marginTop="20px">Login</Box>
                  <Box  width="400px" height="25px" fontSize="15px" margin="auto" marginTop="20px" textAlign="left">Username</Box>
-                 <Input  variant="outline" width="400px" height="50px" border="1px solid red" marginTop="7px" placeholder="Work-Email"/>
+                 <Input  variant="outline"  width="400px" height="50px" border="1px solid red" marginTop="7px" placeholder="Work-Email"/>
                  <Box  width="400px" height="25px" fontSize="15px" margin="auto" marginTop="20px" textAlign="left">Password</Box>
                  <Input  variant="outline" width="400px" height="50px" border="1px solid red" marginTop="7px" placeholder="Password"/>
                   <Link to="/" ><Button width="400px" height="50px" bg="#ff7342" color="white" marginTop="40px" onClick={handleLogin}>Login</Button></Link>

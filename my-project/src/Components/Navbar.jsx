@@ -5,7 +5,7 @@ import "./Homepage.css"
 function Navbar(){
     return(
         <>
-        <Box className="nav" display="flex" justifyContent="space-evenly"   padding="20px"  >
+        <Box className="nav" display="flex"  justifyContent="space-evenly"   padding="20px"  >
             
         <Link to="/"><img src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg" alt="logo" width="200px" height="30px" /></Link>
         <Link to="/products">Products</Link>
